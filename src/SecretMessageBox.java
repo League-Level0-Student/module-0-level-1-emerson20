@@ -20,19 +20,20 @@ public class SecretMessageBox {
 		
 	
 	// 1. Set the passcode in a String variable
-	String code = "Hp#1+M=*";
-	String message = "Please send as many fanticy books and Harry Potter souvenirsas you can fit into ten bags with the undetectible extention charm placed on them.";
+	String code = "Hp#1+M=* ";
+	String message = "Please send as many fanticy books and Harry Potter souvenirs as you can fit into ten bags with the undetectible extention charm placed on them.";
 
 	// 3. Ask your friend for the passcode and store it in a variable
 String mist = JOptionPane.showInputDialog("What is the passcode for the secret message?");
 	// 4. If the passcode matches, show the secret message
 if (mist.equals("Hp#1+M=*")) {
 	JOptionPane.showMessageDialog(null, message);
+}else {
+	JOptionPane.showMessageDialog(null, "INTRUDER!");
 }
 	// 5. If the passcode does not match, pop-up "INTRUDER!!"
-if (mist.equals()) {
-	
-}
+
+
 	// [optional] 6. Have your friend also enter a username, and make sure it is correct before releasing the secret message.
 	}
 }
